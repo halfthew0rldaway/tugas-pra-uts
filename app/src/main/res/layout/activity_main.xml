@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="#F8F9FA">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Halaman Utama"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#202124" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih menu di bawah ini untuk melanjutkan"
+        android:textSize="14sp"
+        android:textColor="#5F6368"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="48dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnGoToSecond"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Buka Halaman Kedua"
+        android:textSize="16sp"
+        android:backgroundTint="#0052CC"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnOpenWebsite"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Buka Website (YouTube)"
+        android:textSize="16sp"
+        android:backgroundTint="#D93025"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
