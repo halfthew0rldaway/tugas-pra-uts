@@ -2,31 +2,31 @@
 
 Projek ini merupakan aplikasi Android sederhana yang dibangun menggunakan Java untuk memenuhi persyaratan tugas pra UTS.
 
-## Fitur dan Requirement
-- 2 Halaman (Activity): MainActivity dan SecondActivity.
-- Intent Navigasi: 1 intent untuk berpindah ke halaman kedua.
-- Intent Kembali: 2 intent untuk kembali ke halaman utama (melalui tombol navigasi dan sistem).
-- Link Website: 1 button link ke website menggunakan implicit intent.
+## Fitur Utama
+- **Halaman Login**: Simulasi login dengan background gambar `backgroundandroid.png`, logo, dan input field.
+- **Navigasi Intent**: Perpindahan antar 3 Activity (Login -> A -> B) menggunakan Intent Explicit.
+- **Mekanisme Kembali**: Navigasi kembali menggunakan tombol 'kembali' yang menerapkan fungsi `finish()`.
+- **UI/UX Proper**: Layout yang rapi menggunakan `RelativeLayout` dan `LinearLayout` dengan elemen Material Design.
 
-## Persiapan dan Setup
-1. Pastikan Android Studio sudah terinstal di perangkat.
-2. Buka Android Studio dan pilih menu Open.
-3. Arahkan ke direktori projek ini dan tunggu hingga proses sinkronisasi Gradle selesai.
-4. Pastikan SDK Android yang diperlukan sudah terunduh melalui SDK Manager.
+## Struktur Projek
+1. `MainActivity`: Halaman Login.
+2. `SecondActivity`: Halaman Activity A (Huruf A Besar).
+3. `ThirdActivity`: Halaman Activity B (Huruf B Besar).
 
 ## Cara Preview dan Testing
-1. Hubungkan perangkat Android fisik melalui kabel data atau jalankan Emulator Android.
-2. Klik tombol Run (ikon segitiga hijau) pada toolbar bagian atas Android Studio.
-3. Pilih perangkat tujuan dan tunggu hingga proses instalasi aplikasi selesai.
-4. Setelah aplikasi terbuka, lakukan pengetesan pada tombol navigasi untuk berpindah halaman.
-5. Tekan tombol kembali untuk memastikan navigasi ke halaman utama berfungsi.
-6. Tekan tombol link website untuk menguji pembukaan browser eksternal.
+1. Buka projek ini menggunakan **Android Studio**.
+2. Pastikan HP Android sudah terhubung atau gunakan Emulator.
+3. Klik tombol **Run** (Ikon Play Hijau).
+4. Aplikasi akan terinstal dan siap diuji sesuai diagram alur.
 
-## Preview Aplikasi
+## Preview Tampilan
 Berikut adalah tampilan aplikasi pada perangkat Android:
 
-### Halaman Utama
-![Halaman Utama](screenshots/screenshot_main.png)
+### 1. Halaman Login
+![Halaman Login](screenshots/screenshot_login.png)
 
-### Halaman Kedua
-![Halaman Kedua](screenshots/screenshot_second.png)
+### 2. Activity A
+![Activity A](screenshots/screenshot_a.png)
+
+### 3. Activity B
+![Activity B](screenshots/screenshot_b.png)

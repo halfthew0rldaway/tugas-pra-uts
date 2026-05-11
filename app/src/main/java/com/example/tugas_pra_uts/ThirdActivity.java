@@ -7,15 +7,15 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SecondActivity extends AppCompatActivity {
+public class ThirdActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_third);
 
         Button btnBack = findViewById(R.id.btnBack);
-        Button btnGoToB = findViewById(R.id.btnGoToB);
+        Button btnGoToA = findViewById(R.id.btnGoToA);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,11 +24,15 @@ public class SecondActivity extends AppCompatActivity {
             }
         });
 
-        btnGoToB.setOnClickListener(new View.OnClickListener() {
+        btnGoToA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                // Return to Activity A (SecondActivity)
+                // We use FLAG_ACTIVITY_REORDER_TO_FRONT or just start it
+                Intent intent = new Intent(ThirdActivity.this, SecondActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(intent);
+                finish();
             }
         });
     }

@@ -4,12 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.tugas_pra_uts"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
-
+    compileSdk = 36
     defaultConfig {
         applicationId = "com.example.tugas_pra_uts"
         minSdk = 24

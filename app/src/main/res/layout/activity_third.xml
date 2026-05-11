@@ -14,20 +14,20 @@
         android:backgroundTint="#757575" />
 
     <TextView
-        android:id="@+id/tvA"
+        android:id="@+id/tvB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A"
+        android:text="B"
         android:textSize="120sp"
         android:textStyle="bold"
         android:layout_centerInParent="true"
         android:textColor="#212121" />
 
     <Button
-        android:id="@+id/btnGoToB"
+        android:id="@+id/btnGoToA"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:text="Act B"
+        android:text="Act A"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="32dp"
         android:backgroundTint="#3F51B5"
